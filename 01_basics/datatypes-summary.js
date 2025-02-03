@@ -34,3 +34,27 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// Stack (Primitive) , Heap (Non-Primitive / Reference)
+
+let myYoutubename = "hqwuidwd.com"
+
+let anothername = myYoutubename
+anothername = "abcdef"
+
+console.log(myYoutubename)
+console.log(anothername) // ONLY anothername will be changed because in stack memory copy is created
+
+
+
+let userOne = {
+    email : "user@google.com",
+    upi: "user@paytm"
+}
+let userTwo = userOne 
+userTwo.email = "anku@email.com"
+
+console.log(userOne.email)
+console.log(userTwo.email) // Both will have same value because in heap only reference is given - copy is not created
