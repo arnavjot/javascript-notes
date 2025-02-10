@@ -24,7 +24,8 @@ myArr.shift()
 console.log(myArr.includes(9));
 console.log(myArr.indexOf(3));
 
-const newArr = myArr.join()
+const newArr = myArr.join() // The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. 
+const newArr2 = myArr.join('-') 
 
 console.log(myArr);
 console.log( newArr);
@@ -32,14 +33,24 @@ console.log( newArr);
 
 // slice, splice
 
-console.log("A ", myArr);
+//The slice() method returns selected elements in an array, as a new array. The slice() method selects from a given start, up to a (not inclusive) given end.
+// array.slice(startIndex, endIndex)
+// The slice() method does not change the original array.
+console.log("A ", myArr); 
 
 const myn1 = myArr.slice(1, 3)
 
 console.log(myn1);
 console.log("B ", myArr);
 
+// The splice() method adds and/or removes array elements. The sPlice() method selects from a given start, up to a (Inclusive) given end.
 
+// The splice() method overwrites the original array.
 const myn2 = myArr.splice(1, 3)
 console.log("C ", myArr);
 console.log(myn2);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// At position 2, remove 1 item, add "Lemon" and "Kiwi"
+fruits.splice(2, 1, "Lemon", "Kiwi");
