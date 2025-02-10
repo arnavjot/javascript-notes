@@ -11,6 +11,11 @@
     console.log(`DB CONNECTED`);
 })() // Semicolon not there so there will be an error - because IIFE doesn't know where to stp the context - to end add ;
 
+//arrow function
+(() => {
+    console.log(`DB CONNECTED`);
+})()
+
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-} )('hitesh')
+} )('anku')
