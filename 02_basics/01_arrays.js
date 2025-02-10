@@ -43,7 +43,8 @@ const myn1 = myArr.slice(1, 3)
 console.log(myn1);
 console.log("B ", myArr);
 
-// The splice() method adds and/or removes array elements. The sPlice() method selects from a given start, up to a (Inclusive) given end.
+// The splice() method adds and/or removes array elements.
+// array.splice(startIndex, deleteCount, item1, item2, ...);
 
 // The splice() method overwrites the original array.
 const myn2 = myArr.splice(1, 3)
